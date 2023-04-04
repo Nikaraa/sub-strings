@@ -1,6 +1,7 @@
 def substrings(string, arrayOfStrings)
+    string.split(" ")
     arrayOfStrings.reduce(Hash.new(0)) do |res, s|
-        if s.include?(string)
+        if string.include?(s)
             res[s]+=1 
         end
         res
